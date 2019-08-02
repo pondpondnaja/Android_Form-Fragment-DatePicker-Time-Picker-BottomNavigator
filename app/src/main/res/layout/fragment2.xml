@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/date_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s1"
+            android:textSize="23sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/date_edit_2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/date_2"
+            android:textColor="@color/alltextcolor"
+            android:hint="@string/hint_1"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"/>
+
+        <TextView
+            android:id="@+id/round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s2"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/date_2"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/round_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/date_edit_2"
+            android:layout_toRightOf="@id/round"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s3"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/round"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/goods_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/round_edit"
+            android:layout_toRightOf="@id/goods_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s4"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/goods_name"
+            android:textColor="@color/alltextcolor"/>
+
+        <RadioGroup
+            android:id="@+id/type_edit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/type"
+            android:layout_below="@id/goods_name_edit">
+
+            <RadioButton
+                android:id="@+id/radio_btn_nomal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menu2_s5"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/radio_btn_abnomal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menu2_s6"
+                android:textSize="20sp"
+                android:layout_marginLeft="40dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/thickness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s7"
+            android:layout_below="@id/type"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_inside_backgound"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:background="@color/colorPrimaryDark"/>
+
+        <RadioGroup
+            android:id="@+id/thickness_edit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/thickness">
+
+            <RadioButton
+                android:id="@+id/thickness_edit_1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menu2_s8"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"/>
+
+            <RadioButton
+                android:id="@+id/thickness_edit_2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menu2_s9"
+                android:textSize="20sp"
+                android:layout_marginLeft="40dp"/>
+
+            <RadioButton
+                android:id="@+id/thickness_edit_3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menu2_s10"
+                android:textSize="20sp"
+                android:layout_marginLeft="40dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/steam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s11"
+            android:layout_below="@id/thickness_edit"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_inside_backgound"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s12"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/steam"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/temperature_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/steam"
+            android:layout_toRightOf="@id/temperature"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/rpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s13"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/temperature"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/rpm_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/temperature_edit"
+            android:layout_toRightOf="@id/rpm"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/damp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s14"
+            android:layout_below="@id/rpm"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_inside_backgound"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/temperature_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s15"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/damp"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/temperature_edit_2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/damp"
+            android:layout_toRightOf="@id/temperature_2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/rpm_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s16"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/temperature_2"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/rpm_2_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/temperature_edit_2"
+            android:layout_toRightOf="@id/rpm_2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/time_fg_2_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s17"
+            android:layout_below="@id/rpm_2"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_inside_backgound"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/time_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s18"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/time_fg_2_head"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/time_start_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/time_fg_2_head"
+            android:layout_toRightOf="@id/time_start"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"
+            android:hint="@string/hint_2"/>
+
+        <TextView
+            android:id="@+id/time_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s19"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/time_start"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/time_done_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/time_start_edit"
+            android:layout_toRightOf="@id/time_done"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"
+            android:hint="@string/hint_2"/>
+
+        <TextView
+            android:id="@+id/how_many"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s20"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/time_done"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/how_many_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/time_done_edit"
+            android:layout_toRightOf="@id/how_many"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:hint="@string/menu2_s21"
+            android:textAlignment="center"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/remaining_flour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s22"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/how_many"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/remaining_flour_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/how_many_edit"
+            android:layout_toRightOf="@id/remaining_flour"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:hint="@string/menu2_s23"
+            android:textAlignment="center"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/supervisor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s24"
+            android:layout_below="@id/remaining_flour_edit"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_inside_backgound"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:background="@color/colorPrimaryDark"/>
+
+        <EditText
+            android:id="@+id/supervisor_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/supervisor"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/note_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu2_s25"
+            android:layout_below="@id/supervisor_edit"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_inside_backgound"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:background="@color/colorPrimaryDark"/>
+
+        <EditText
+            android:id="@+id/note_edit_2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/note_2"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+</ScrollView>

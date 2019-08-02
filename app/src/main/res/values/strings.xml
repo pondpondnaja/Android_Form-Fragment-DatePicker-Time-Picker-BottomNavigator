@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Application1</string>
+
+    <string name="menu1">บันทึกการโม่ข้าว</string>
+    <string name="menu2">บันทึกการนึงแป้ง-อบหมาด</string>
+    <string name="menu3">Optional</string>
+
+    <string name="hint_1">ใส่วันที่ตรงนี้</string>
+    <string name="hint_2">ใส่เวลาตรงนี้</string>
+
+    <string name="menu1_s1">วัน / เดือน / ปี</string>
+    <string name="menu1_s2">เวลา</string>
+    <string name="menu1_s3">ประเภทสินค้า</string>
+    <string name="menu1_s4">สูตร</string>
+    <string name="menu1_s5">A</string>
+    <string name="menu1_s6">B</string>
+    <string name="menu1_s7">C</string>
+    <string name="menu1_s8">D</string>
+    <string name="menu1_s9">การโม่</string>
+    <string name="menu1_s10">ความสะอาด</string>
+    <string name="menu1_s11">การเดินเครื่อง</string>
+    <string name="menu1_s12">5</string>
+    <string name="menu1_s13">4</string>
+    <string name="menu1_s14">3</string>
+    <string name="menu1_s15">2</string>
+    <string name="menu1_s16">1</string>
+    <string name="menu1_s17">การเดินเครื่อง</string>
+    <string name="menu1_s18">ปกติ</string>
+    <string name="menu1_s19">ไม่ปกติ</string>
+    <string name="menu1_s20">สิ่งผิดปกติ</string>
+    <string name="menu1_s21">มี</string>
+    <string name="menu1_s22">ไม่มี</string>
+    <string name="menu1_s23">ตะแกรง</string>
+    <string name="menu1_s24">ความสะอาด</string>
+    <string name="menu1_s25">รอยชำรุด</string>
+    <string name="menu1_s26">ความละเอียด</string>
+    <string name="menu1_s27">น้ำแป้ง</string>
+    <string name="menu1_s28">สิ่งเจือปน</string>
+    <string name="menu1_s29">สี</string>
+    <string name="menu1_s30">กลิ่น</string>
+    <string name="menu1_s31">หมายเหตุ</string>
+
+    <string name="menu2_s1">วันที่</string>
+    <string name="menu2_s2">รอบที่</string>
+    <string name="menu2_s3">ชื่อสินค้า</string>
+    <string name="menu2_s4">ชนิด</string>
+    <string name="menu2_s5">ธรรมดา</string>
+    <string name="menu2_s6">ไร้สาร</string>
+    <string name="menu2_s7">ความหนา</string>
+    <string name="menu2_s8">บาง</string>
+    <string name="menu2_s9">ปกติ</string>
+    <string name="menu2_s10">หนา</string>
+    <string name="menu2_s11">Temp/Speed นึ่ง</string>
+    <string name="menu2_s12">80–90˚C</string>
+    <string name="menu2_s13">≤ 20 RPM</string>
+    <string name="menu2_s14">Temp/Speed อบหมาด</string>
+    <string name="menu2_s15">70–80˚C</string>
+    <string name="menu2_s16">≤ 50 RPM</string>
+    <string name="menu2_s17">เวลา</string>
+    <string name="menu2_s18">เริ่ม</string>
+    <string name="menu2_s19">เสร็จ</string>
+    <string name="menu2_s20">จำนวน</string>
+    <string name="menu2_s21">กระสอบ</string>
+    <string name="menu2_s22">เศษแป้ง</string>
+    <string name="menu2_s23">Kg.</string>
+    <string name="menu2_s24">ผู้รับผิดชอบ</string>
+    <string name="menu2_s25">หมายเหตุ</string>
+
+
+</resources>

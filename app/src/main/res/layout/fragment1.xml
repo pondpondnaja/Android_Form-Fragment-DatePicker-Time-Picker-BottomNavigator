@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s1"
+            android:textSize="23sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/date_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="20"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/date"
+            android:textColor="@color/alltextcolor"
+            android:hint="@string/hint_1"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s2"
+            android:textSize="23sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@id/date"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/time_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/date_edit"
+            android:layout_toRightOf="@id/time"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:hint="@string/hint_2"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s3"
+            android:textSize="23sp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/time"
+            android:textColor="@color/alltextcolor"/>
+
+        <EditText
+            android:id="@+id/type_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/time_edit"
+            android:layout_toRightOf="@id/type"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/recipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s4"
+            android:layout_below="@id/type"
+            android:textSize="23sp"
+            android:textColor="@color/alltextcolor"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/recipe_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@id/recipe"
+            android:layout_below="@id/type_edit">
+
+            <RadioButton
+                android:id="@+id/radio_btn_a"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s5"
+                android:textSize="23sp"
+                android:layout_marginLeft="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_btn_b"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s6"
+                android:textSize="23sp"
+                android:layout_marginLeft="35dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_btn_c"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s7"
+                android:textSize="23sp"
+                android:layout_marginLeft="35dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_btn_d"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s8"
+                android:textSize="23sp"
+                android:layout_marginLeft="35dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/howto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s9"
+            android:layout_below="@id/recipe"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_inside_backgound"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s10"
+            android:layout_below="@id/howto"
+            android:textSize="23sp"
+            android:textColor="@color/alltextcolor"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/clean_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@id/clean"
+            android:layout_below="@id/howto">
+
+            <RadioButton
+                android:id="@+id/radio_btn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s12"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/radio_btn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s13"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s14"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s15"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"/>
+
+            <RadioButton
+                android:id="@+id/radio_btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s16"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/engin_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s17"
+            android:layout_below="@id/clean"
+            android:textSize="23sp"
+            android:textColor="@color/alltextcolor"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/engin_status_edit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/engin_status"
+            android:layout_below="@id/clean_edit">
+
+            <RadioButton
+                android:id="@+id/radio_btn_nomal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menu1_s18"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/radio_btn_abnomal"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menu1_s19"
+                android:textSize="20sp"
+                android:layout_marginLeft="40dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/notcorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s20"
+            android:layout_below="@id/engin_status"
+            android:textSize="23sp"
+            android:textColor="@color/alltextcolor"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/notcorrect_edit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@id/notcorrect"
+            android:layout_below="@id/engin_status_edit">
+
+            <RadioButton
+                android:id="@+id/have"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menu1_s21"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/have_not"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menu1_s22"
+                android:textSize="20sp"
+                android:layout_marginLeft="65dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/ta_krang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s23"
+            android:layout_below="@id/notcorrect"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_inside_backgound"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/ta_krang_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s24"
+            android:layout_below="@id/ta_krang"
+            android:textSize="23sp"
+            android:textColor="@color/alltextcolor"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/ta_krang_clean_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@id/ta_krang_clean"
+            android:layout_below="@id/ta_krang">
+
+            <RadioButton
+                android:id="@+id/ta_radio_btn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s12"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/ta_radio_btn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s13"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"/>
+
+            <RadioButton
+                android:id="@+id/ta_radio_btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s14"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"/>
+
+            <RadioButton
+                android:id="@+id/ta_radio_btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s15"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"/>
+
+            <RadioButton
+                android:id="@+id/ta_radio_btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/menu1_s16"
+                android:textSize="20sp"
+                android:layout_marginLeft="8dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/broken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s25"
+            android:layout_below="@id/ta_krang_clean"
+            android:textSize="23sp"
+            android:textColor="@color/alltextcolor"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/broken_edit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="19dp"
+            android:layout_toRightOf="@id/broken"
+            android:layout_below="@id/ta_krang_clean_edit">
+
+            <RadioButton
+                android:id="@+id/have_broke"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menu1_s21"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/have_not_broke"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menu1_s22"
+                android:textSize="20sp"
+                android:layout_marginLeft="65dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/grinding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s26"
+            android:layout_below="@id/broken"
+            android:textSize="23sp"
+            android:textColor="@color/alltextcolor"
+            android:layout_marginTop="22dp"/>
+
+        <EditText
+            android:id="@+id/grinding_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/broken_edit"
+            android:layout_toRightOf="@id/type"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/flour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s27"
+            android:layout_below="@id/grinding"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_inside_backgound"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/contamination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s28"
+            android:layout_below="@id/flour"
+            android:textSize="23sp"
+            android:textColor="@color/alltextcolor"
+            android:layout_marginTop="22dp"/>
+
+        <RadioGroup
+            android:id="@+id/contamination_edit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@id/broken"
+            android:layout_below="@id/flour">
+
+            <RadioButton
+                android:id="@+id/have_contamination"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menu1_s21"
+                android:textSize="20sp"/>
+
+            <RadioButton
+                android:id="@+id/have_not_contamination"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/menu1_s22"
+                android:textSize="20sp"
+                android:layout_marginLeft="65dp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s29"
+            android:layout_below="@id/contamination"
+            android:textSize="23sp"
+            android:textColor="@color/alltextcolor"
+            android:layout_marginTop="22dp"/>
+
+        <EditText
+            android:id="@+id/color_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/contamination_edit"
+            android:layout_toRightOf="@id/color"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/smell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s30"
+            android:layout_below="@id/color"
+            android:textSize="23sp"
+            android:textColor="@color/alltextcolor"
+            android:layout_marginTop="22dp"/>
+
+        <EditText
+            android:id="@+id/smell_edit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/color_edit"
+            android:layout_toRightOf="@id/smell"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu1_s31"
+            android:layout_below="@id/smell_edit"
+            android:textSize="25sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/text_inside_backgound"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:background="@color/colorPrimaryDark"/>
+
+        <EditText
+            android:id="@+id/note_edit"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/note"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:background="@drawable/edittext_box"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+
+</ScrollView>
