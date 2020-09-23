@@ -65,6 +65,8 @@
     <string name="menu2_s23">Kg.</string>
     <string name="menu2_s24">ผู้รับผิดชอบ</string>
     <string name="menu2_s25">หมายเหตุ</string>
+    <string name="imagePreview">ImagePreview</string>
+    <string name="open_camera">OPEN CAMERA</string>
 
 
 </resources>
